@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Informações gerais do projeto -->
-    <groupId>com.seuprojeto</groupId>  <!-- Substitua com o nome do seu projeto -->
+    <groupId>com.TrabalhoTestes</groupId>  <!-- Substitua com o nome do seu projeto -->
     <artifactId>calculadora-teste</artifactId> <!-- Nome do seu artefato -->
     <version>1.0-SNAPSHOT</version>
     <name>Calculadora Teste</name>
