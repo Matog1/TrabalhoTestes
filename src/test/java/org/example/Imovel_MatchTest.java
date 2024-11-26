@@ -23,30 +23,19 @@ public class Imovel_MatchTest {
     }
 
     @Test
-    public void testeCalcularAreaQuadrado() {
-        Imovel_Match figura = new Imovel_Match();
-        double resultado = figura.calcularArea(4.0);
-        assertEquals(16.0, resultado, 0.0);
+    public void testeCalcularDiferencaPreco() {
+        Imovel_Match imovel = new Imovel_Match();
+        double resultado = imovel.calcularDiferencaPreco(200000, 300000);
+        assertEquals(100000.0, resultado, 0.1);
+
+        resultado = imovel.calcularDiferencaPreco(500000, 300000);
+        assertEquals(200000.0, resultado, 0.1);
     }
 
     @Test
-    public void testeCalcularAreaRetangulo() {
-        Imovel_Match figura = new Imovel_Match();
-        double resultado = figura.calcularAreaRetangulo(4.0, 5.0);
-        assertEquals(20.0, resultado, 0.0);
-    }
-
-    @Test
-    public void testeCalcularAreaCirculo() {
-        Imovel_Match figura = new Imovel_Match();
-        double resultado = figura.calcularAreaCirculo(2.0);
-        assertEquals(12.56, resultado, 0.1);
-    }
-
-    @Test
-    public void testeCalcularAreaTriangulo() {
-        Imovel_Match figura = new Imovel_Match();
-        double resultado = figura.calcularAreaTriangulo(5.0, 2.0);
-        assertEquals(5.0, resultado, 0.1);
+    public void testeEstaDentroDoOrcamento() {
+        Imovel_Match imovel = new Imovel_Match();
+        assertTrue(imovel.estaDentroDoOrcamento(200000, 250000), "O imóvel deve estar dentro do orçamento");
+        assertFalse(imovel.estaDentroDoOrcamento(300000, 250000), "O imóvel não deve estar dentro do orçamento");
     }
 }
