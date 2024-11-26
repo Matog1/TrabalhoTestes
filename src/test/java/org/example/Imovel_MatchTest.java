@@ -14,7 +14,7 @@ public class Imovel_MatchTest {
         resultado = imovel.calcularPrecoPorMetroQuadrado(300000, 150);
         assertEquals(2000.0, resultado, 0.1);
     }
-
+ 
     @Test
     public void testeCompararPrecos() {
         Imovel_Match imovel = new Imovel_Match();
