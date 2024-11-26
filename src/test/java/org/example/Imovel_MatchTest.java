@@ -18,7 +18,7 @@ public class Imovel_MatchTest {
     @Test
     public void testeCompararPrecos() {
         Imovel_Match imovel = new Imovel_Match();
-        assertTrue(imovel.compararPrecos(300000, 300000), "O primeiro imóvel deve ser mais barato que o segundo");
+        assertTrue(imovel.compararPrecos(200000, 300000), "O primeiro imóvel deve ser mais barato que o segundo");
         assertFalse(imovel.compararPrecos(200000, 200000), "O primeiro imóvel não deve ser mais barato que o segundo");
     }
 
@@ -31,7 +31,7 @@ public class Imovel_MatchTest {
         resultado = imovel.calcularDiferencaPreco(500000, 300000);
         assertEquals(200000.0, resultado, 0.1);
     }
-
+ 
     @Test
     public void testeEstaDentroDoOrcamento() {
         Imovel_Match imovel = new Imovel_Match();
