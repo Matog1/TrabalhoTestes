@@ -9,7 +9,7 @@ public class Imovel_MatchTest {
     public void testeCalcularPrecoPorMetroQuadrado() {
         Imovel_Match imovel = new Imovel_Match();
         double resultado = imovel.calcularPrecoPorMetroQuadrado(200000, 100);
-        assertEquals(1000.0, resultado, 0.1);
+        assertEquals(2000.0, resultado, 0.1);
         
         resultado = imovel.calcularPrecoPorMetroQuadrado(300000, 150);
         assertEquals(2000.0, resultado, 0.1);
