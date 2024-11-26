@@ -10,19 +10,13 @@ public class Imovel_Match {
         return preco1 < preco2; // Retorna true se o primeiro imóvel é mais barato que o segundo
     }
 
-    public double calcularArea(double lado) {
-        return lado * lado;
+    // Método para calcular a diferença de preço entre dois imóveis
+    public double calcularDiferencaPreco(double preco1, double preco2) {
+        return Math.abs(preco1 - preco2);
     }
 
-    public double calcularAreaRetangulo(double base, double altura) {
-        return base * altura;
-    }
-
-    public double calcularAreaCirculo(double raio) {
-        return 3.1415 * raio * raio;
-    }
-
-    public double calcularAreaTriangulo(double base, double altura) {
-        return base * altura / 2.0;
+    // Método para verificar se um imóvel está dentro de um orçamento
+    public boolean estaDentroDoOrcamento(double preco, double orcamento) {
+        return preco <= orcamento; // Retorna true se o preço do imóvel está dentro do orçamento
     }
 }
